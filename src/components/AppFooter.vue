@@ -7,32 +7,32 @@ export default {
             navbar: [
                 {
                     label: 'HOME',
-                    url: '#',
+                    url: '#null',
                     active: true,
                 },
                 {
                     label: 'ABOUT',
-                    url: '#',
+                    url: '#null',
                     active: false,
                 },
                 {
                     label: 'PROJECTS',
-                    url: '#',
+                    url: '#null',
                     active: false,
                 },
                 {
                     label: 'SERVICES',
-                    url: '#',
+                    url: '#null',
                     active: false,
                 },
                 {
                     label: 'BLOG',
-                    url: '#',
+                    url: '#null',
                     active: false,
                 },
                 {
                     label: 'CONTACT',
-                    url: '#',
+                    url: '#null',
                     active: false,
                 },
             ],
@@ -67,10 +67,10 @@ export default {
                     </div>
                     <div class="col">
                         <div class="social">
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#null"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#null"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#null"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#null"><i class="fa-brands fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>

@@ -7,32 +7,32 @@ export default {
             navbar: [
                 {
                     label: 'HOME',
-                    url: '#',
+                    url: '#null',
                     active: true,
                 },
                 {
                     label: 'ABOUT',
-                    url: '#',
+                    url: '#null',
                     active: false,
                 },
                 {
                     label: 'PROJECTS',
-                    url: '#',
+                    url: '#null',
                     active: false,
                 },
                 {
                     label: 'SERVICES',
-                    url: '#',
+                    url: '#null',
                     active: false,
                 },
                 {
                     label: 'BLOG',
-                    url: '#',
+                    url: '#null',
                     active: false,
                 },
                 {
                     label: 'CONTACT',
-                    url: '#',
+                    url: '#null',
                     active: false,
                 },
             ]
@@ -80,9 +80,9 @@ export default {
                         <h1>THE BEST BUSINESS CONSULTING</h1>
                         <div class="third-line">
                             <button class="button">
-                                <a href="#">read more</a>
+                                <a href="#null">read more</a>
                             </button>
-                            <a href="#"><i class="fa-solid fa-play"></i></a>
+                            <a href="#null"><i class="fa-solid fa-play"></i></a>
                         </div>
                     </div>
                 </div>
@@ -198,15 +198,26 @@ export default {
                     @include align-center;
 
                     button{
+                        border: none;
                         padding: 15px 40px 15px 40px;
                         background-color: $lightyellow;
                         @include upperCase;
                         font-weight: 100;
                         margin-right: 30px;
+                        transition: 1s;
+
+                        &:hover{
+                            background-color: red;
+                        }
 
                         a{
                             text-decoration: none;
-                            color: #333333
+                            color: #333333;
+                            transition: 1s;
+
+                            &:hover{
+                                color: white;
+                            }
                         }
                     }
 
