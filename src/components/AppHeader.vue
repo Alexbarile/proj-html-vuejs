@@ -1,10 +1,8 @@
 <script>
-import {store} from '../store';
 
 export default {
     data() {
         return {
-            store,
             activeItem: 0,
             navbar: [
                 {
@@ -41,7 +39,6 @@ export default {
         }
     },
 }
-
 </script>
 
 <template>
@@ -104,17 +101,24 @@ export default {
 @use '../styles/partials/variables' as *;
 
     // logo e navbar
+
+    .container-80{
+        position: absolute;
+        z-index: 1;
+        left: 200px
+    }
+    
     .row-header{
         @include flex;
         @include align-center;
         @include justify-between;
         padding: 20px 0 20px 0;
-        position: relative;
-        z-index: 1;
+        
 
         .logo{
             img{
                 width: 100px;
+                cursor: pointer
             }
         }
 
@@ -148,8 +152,7 @@ export default {
             @include flex;
             width: 100%;
             height: 100%;
-            position: absolute;
-            top: 0;
+            position: relative;
             z-index: 0;
 
             .col-30{

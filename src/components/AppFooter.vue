@@ -1,10 +1,8 @@
 <script>
-import {store} from '../store';
 
 export default {
     data() {
         return {
-            store,
             activeItem: 0,
             navbar: [
                 {
@@ -37,24 +35,138 @@ export default {
                     url: '#',
                     active: false,
                 },
-            ]
+            ],
         }
     },
 }
-
 </script>
 
 <template>
     <footer>
-        <div class="container-100">
-            
+        <div class="bg-darkblue">
+            <div class="container-80">
+
+                <!-- prima riga -->
+
+                <div class="row">
+                    <div class="col">
+                        <div class="logo">
+                            <img src="../../public/img/logotype-2-300x50.png" alt="logo-type">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <nav>
+                            <ul>
+                                <li v-for="(item, index) in navbar" :key="index" >
+                                    <a :href="item.url" class="item.active ? 'active : ''">
+                                        {{ item.label }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hr"></div>
+
+                <!-- seconda riga -->
+
+                <div class="row">
+                    <div class="col">
+                        <h5>Terms of use <br> Privacy Environmental Policy</h5>
+
+                    </div>
+                    <div class="col">
+                        <h5>Copyright © 2023 Phlox Consulting. All Rights Reserved.</h5>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        
     </footer>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/mixins' as *;
 @use '../styles/partials/variables' as *;
-    
+
+
+    .bg-darkblue{
+        width: 100%;
+        background-color: $darkblue;
+
+        .container-80{
+
+            // prima riga
+            .row{
+                @include flex;
+                @include align-center;
+                @include justify-between;
+                widows: 100%;
+                padding: 70px 0 70px 0;
+
+                .col{
+                    @include flex;
+                    @include align-center;
+
+                    .logo{
+                        img{
+                            width: 150px;
+                        }
+                    }
+
+                    ul{
+                        @include flex;
+                        list-style-type: none;
+
+                        li{
+                            padding: 13px;
+
+                            a{
+                                text-decoration: none;
+                                color: $darkgray;
+
+                                &:hover{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .col{
+                    .social{
+                        display: flex;
+
+                        a{
+                            color: white;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+
+            .hr{
+                border-bottom: 0.5px solid $darkgray;
+            }
+
+            // seconda riga
+
+            .row{
+                .col{
+                    h5{
+                        color: $darkgray;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+    }
 </style>
