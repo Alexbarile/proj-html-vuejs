@@ -13,3 +13,7 @@
 @mixin justify-between {
     justify-content: space-between;
 }
+
+@mixin upperCase {
+    text-transform: uppercase;
+}
