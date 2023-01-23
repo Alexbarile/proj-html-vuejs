@@ -128,7 +128,7 @@ export default {
 
                     a{
                         text-decoration: none;
-                        color: #AAAAAA;
+                        color: $lightgray;
 
                         &.active, &:hover{
                             color: white;
@@ -154,7 +154,7 @@ export default {
 
             .col-30{
                 width: 30%;
-                background-color: #1F1E38;
+                background-color: $darkblue;
                 height: 1000px;
                 display: flex;
                 flex-direction: column;
@@ -171,7 +171,7 @@ export default {
                     @include flex;
                     
                     .hr{
-                       border-bottom: 2px solid #39FFBF;
+                       border-bottom: 2px solid $lightyellow;
                        width: 40px;
                        margin-right: 30px;  
                     }
@@ -196,7 +196,7 @@ export default {
 
                     button{
                         padding: 15px 40px 15px 40px;
-                        background-color: #39FFBF;
+                        background-color: $lightyellow;
                         @include upperCase;
                         font-weight: 100;
                         margin-right: 30px;
@@ -208,7 +208,7 @@ export default {
                     }
 
                     i{
-                        color: #39FFBF;
+                        color: $lightyellow;
                         border-radius: 50%;
                         border: 1px solid white;
                         padding: 18px;
@@ -218,8 +218,6 @@ export default {
 
             .col-70{
                 width: 70%;
-                background-color: blue;
-                height: 300px;
 
                 .jumbo{
                     img{
