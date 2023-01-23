@@ -75,28 +75,26 @@ export default {
 
             <div class="row">
                 <div class="col-30">
-                    <div class="first-line">
-                        <div class="hr"></div>
-                        <h4>always the best way you need it</h4>
+                    <div class="info">
+                        <div class="first-line">
+                            <div class="hr"></div>
+                            <h4>always the best way you need it</h4>
+                        </div>
+                        <h1>THE BEST BUSINESS CONSULTING</h1>
+                        <div class="third-line">
+                            <button class="button">
+                                <a href="#">read more</a>
+                            </button>
+                            <a href="#"><i class="fa-solid fa-play"></i></a>
+                        </div>
                     </div>
-                    <h1>THE BEST BUSINESS CONSULTING</h1>
-                    <div class="third-line">
-                        <button class="button">
-                            read more
-                        </button>
-                        <i class="fa-regular fa-circle-play"></i>
-                    </div>
-
                 </div>
-
                 <div class="col-70">
                     <div class="jumbo">
                         <img src="../../public/img/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg" alt="jumbo">
                     </div>
-
                 </div>
             </div>
-            
         </div>
     </header>
 </template>
@@ -111,6 +109,8 @@ export default {
         @include align-center;
         @include justify-between;
         padding: 20px 0 20px 0;
+        position: relative;
+        z-index: 1;
 
         .logo{
             img{
@@ -148,11 +148,24 @@ export default {
             @include flex;
             width: 100%;
             height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 0;
 
             .col-30{
                 width: 30%;
                 background-color: #1F1E38;
                 height: 1000px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                .info{
+                    position: absolute;
+                    left: 170px
+                }
 
                 .first-line{
                     @include flex;
@@ -160,8 +173,7 @@ export default {
                     .hr{
                        border-bottom: 2px solid #39FFBF;
                        width: 40px;
-                       margin-right: 30px;
-                          
+                       margin-right: 30px;  
                     }
 
                     h4{
@@ -183,23 +195,25 @@ export default {
                     @include align-center;
 
                     button{
-                        padding: 15px 35px 15px 35px;
+                        padding: 15px 40px 15px 40px;
                         background-color: #39FFBF;
                         @include upperCase;
                         font-weight: 100;
+                        margin-right: 30px;
+
+                        a{
+                            text-decoration: none;
+                            color: #333333
+                        }
                     }
 
                     i{
                         color: #39FFBF;
-
-                        .fa-circle-play{
-                            padding: 60px;
-                        }
+                        border-radius: 50%;
+                        border: 1px solid white;
+                        padding: 18px;
                     }
                 }
-
-                
-
             }
 
             .col-70{
@@ -214,12 +228,8 @@ export default {
                         object-fit: cover;
                         object-position: top
                     }
-
                 }
             }
         }
     }
-
-
-    
 </style>
