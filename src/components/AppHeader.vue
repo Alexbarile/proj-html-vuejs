@@ -159,10 +159,10 @@ export default {
                 width: 30%;
                 background-color: $darkblue;
                 height: 1000px;
-                display: flex;
+                @include flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                @include align-center;
+                @include justify-center;
                 position: relative;
 
                 .info{
@@ -207,7 +207,7 @@ export default {
                         transition: 1s;
 
                         &:hover{
-                            background-color: red;
+                            background-color: $lightred;
                         }
 
                         a{

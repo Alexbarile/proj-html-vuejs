@@ -82,11 +82,9 @@ export default {
                 <div class="row">
                     <div class="col">
                         <h5>Terms of use <br> Privacy Environmental Policy</h5>
-
                     </div>
                     <div class="col">
                         <h5>Copyright © 2023 Phlox Consulting. All Rights Reserved.</h5>
-
                     </div>
                 </div>
             </div>

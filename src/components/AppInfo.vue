@@ -24,15 +24,15 @@ export default {
 
     .cardInfo{
         width: calc(100% / 2);
-        display: flex;
-        justify-content: center;
+        @include flex;
+        @include justify-center;
         padding: 40px;
 
         .miniature{
             margin-right: 30px;
             i{
                 padding: 15px;
-                background-color: red;
+                background-color: $lightred;
                 border-radius: 100%;
                 color: white;
                 font-size: 25px;
