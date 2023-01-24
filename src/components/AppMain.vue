@@ -91,6 +91,20 @@ export default {
 
             <!-- SESTA SEZIONE -->
 
+            <div class="container-100">
+                <div class="bg">
+                    
+                    <div class="row">
+                        <div class="col">
+                            <h1>LET'S TALK ABOUT WORK</h1>
+                            <p>A wonderful serenity has taken possession Far far <br> away, behind the word mountains.</p>
+                            <button><a href="#null">get started</a></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
 
 
 
@@ -289,6 +303,57 @@ export default {
 
 
     // SESTA SEZIONE
+
+    .bg{
+        background-image: url('../../public/img/business-people-working-together-on-project-and-B3MZ4TX.jpg');
+        background-size: cover;
+        height: 350px;
+        .row{
+            @include flex;
+            @include align-center;
+            @include justify-center;
+            width: 100%;
+
+            .col{
+                text-align: center;
+
+                h1{
+                    font-size: 40px;
+                    color: white;
+                    margin-bottom: 20px;
+                    
+                }
+
+                p{
+                    color: $darkgray;
+                    margin-bottom: 20px;
+                }
+
+                button{
+                    border: none;
+                    padding: 15px 40px 15px 40px;
+                    background-color: $darkblue;
+                    @include upperCase;
+                    font-weight: 100;
+                    transition: 1s;
+
+                    &:hover{
+                        background-color: $lightyellow;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        transition: 1s;
+
+                        &:hover{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
 
