@@ -1,10 +1,14 @@
 <script>
 import {store} from '../store';
 import AppInfo from './AppInfo.vue';
+import AppImg from './AppImg.vue';
+import AppName from './AppName.vue';
 
 export default {
     components:{
         AppInfo,
+        AppImg,
+        AppName,
     },
     data() {
         return {
@@ -33,7 +37,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="container-80">
+            <div class="container-80-first">
                 <div class="row">
                     <AppInfo v-for="(item, index) in store.cardInfo" :key="index" :info="item"></AppInfo>
                 </div>
@@ -74,6 +78,32 @@ export default {
 
             <!-- TERZA SEZIONE -->
 
+            <div class="container-100">
+                <div class="bg-blue">
+                    <div class="container-80-third">
+                        <div class="row">
+                            <div class="col">
+                                <div class="info">
+                                    <div class="first-line">
+                                        <div class="hr"></div>
+                                        <h4>project</h4>
+                                    </div>
+                                    <h1>OUR EXPERT TRUSTED CONSULTANTS HELP CLIENTS</h1>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <a href="#null"><i class="fa-solid fa-arrow-left"></i></a>
+                                <a href="#null"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <AppImg v-for="(item, index) in store.cardImg" :key="index" :img="item"></AppImg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
 
@@ -93,7 +123,6 @@ export default {
 
             <div class="container-100">
                 <div class="bg">
-                    
                     <div class="row">
                         <div class="col">
                             <h1>LET'S TALK ABOUT WORK</h1>
@@ -101,19 +130,8 @@ export default {
                             <button><a href="#null">get started</a></button>
                         </div>
                     </div>
-
                 </div>
             </div>
-
-
-
-
-            
-
-
-
-
-
         </div>
     </main>
 </template>
@@ -154,12 +172,14 @@ export default {
         }
     }
 
-    .container-80{
-
+    .container-80-first{
+        margin: 0 auto;
+        margin-bottom: 80px;
+        width: 80%;
+        
         .row{
             @include flex;
             @include wrap;
-            margin-bottom: 80px;
         }
     }
 
@@ -287,6 +307,68 @@ export default {
 
     // TERZA SEZIONE
 
+    .container-100{
+        .bg-blue{
+            width: 100%;
+            background-color: $darkblue;
+
+            .container-80-third{
+                width: 80%;
+                margin: 0 auto;
+                padding: 180px 0 120px 0;
+               
+                .row{
+                    padding: 25px 0 25px 0;
+                    @include flex;
+                    @include align-center;
+                    @include justify-between;
+
+                    .col{
+                        .info{
+                            .first-line{
+                                @include flex;
+
+                                .hr{
+                                    border-bottom: 2px solid $lightyellow;
+                                    width: 40px;
+                                    margin-right: 30px; 
+                                }
+
+                                h4{
+                                    @include upperCase;
+                                    color: rgb(254, 230, 230);
+                                    font-weight: 200;
+                                }
+                            }
+
+                            h1{
+                                color: white;
+                                font-size: 40px;
+                                line-height: 55px;
+                                width: 75%;
+                            }
+                        }
+
+                        a{
+                            color: rgb(254, 230, 230);
+                            padding: 5px;
+
+                            i{
+                                padding: 15px;
+                                background-color: rgba(255, 255, 255, 0.1);
+                                transition: 1s;
+
+                                &:hover{
+                                    background-color: $lightyellow;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
 
 
@@ -308,6 +390,7 @@ export default {
         background-image: url('../../public/img/business-people-working-together-on-project-and-B3MZ4TX.jpg');
         background-size: cover;
         height: 350px;
+        
         .row{
             @include flex;
             @include align-center;
@@ -321,7 +404,6 @@ export default {
                     font-size: 40px;
                     color: white;
                     margin-bottom: 20px;
-                    
                 }
 
                 p{

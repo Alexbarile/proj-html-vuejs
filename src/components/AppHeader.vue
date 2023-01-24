@@ -113,7 +113,6 @@ export default {
         @include align-center;
         @include justify-between;
         padding: 20px 0 20px 0;
-        
 
         .logo{
             img{
@@ -133,6 +132,7 @@ export default {
                     a{
                         text-decoration: none;
                         color: $lightgray;
+                        transition: 1s;
 
                         &.active, &:hover{
                             color: white;

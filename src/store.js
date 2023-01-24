@@ -32,7 +32,23 @@ export const store = reactive({
 
     // array card img
 
-    cardImg: [],
+    cardImg: [
+        {
+            img: '../../public/img/DRY-1-790x592.jpg',
+            title: 'Purinky Products',
+            subtitle: 'uncategorized'
+        },
+        {
+            img: '../../public/img/221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg',
+            title: 'Purinky Products',
+            subtitle: 'uncategorized'
+        },
+        {
+            img: '../../public/img/z1el4c4p-790x592.jpg',
+            title: 'Purinky Products',
+            subtitle: 'uncategorized'
+        },
+    ],
 
     // array card name
 
