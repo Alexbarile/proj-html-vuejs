@@ -21,6 +21,12 @@ body {
     margin: 0 auto;
 }
 
+.container-100-end {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .container-80 {
     width: 80%;
     margin: 0 auto;
