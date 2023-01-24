@@ -6,20 +6,26 @@ export const store = reactive({
 
     cardInfo: [
         {
-            title: 'ciao',
-            description: 'ffff'
+            title: 'STATISTICAL CONSULTING',
+            description: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a',
+            icon: 'fa-solid fa-chart-line',
+
         },
         {
-            title: 'ciao',
-            description: 'ffff'
+            title: 'DIGITAL CONSULTING',
+            description: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a',
+            icon: 'fa-solid fa-volume-high'
+
         },
         {
-            title: 'ciao',
-            description: 'ffff'
+            title: 'BANKING CONSULTING',
+            description: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a',
+            icon: 'fa-solid fa-book'
         },
         {
-            title: 'ciao',
-            description: 'ffff'
+            title: 'ENTERPRISE CONSULTING',
+            description: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a',
+            icon: 'fa-solid fa-bullseye'
         },
 
     ],

@@ -82,15 +82,8 @@ export default {
     .container-80{
         .row{
             display: flex;
-            align-items: center;
-            justify-content: space-around;
             flex-wrap: wrap;
-
-            // .col{
-            //     width: 50%;
-            //     display: flex;
-            //     justify-content: center;
-            // }
+            margin-bottom: 80px;
         }
     }
     
