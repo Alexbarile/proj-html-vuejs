@@ -23,10 +23,22 @@ export default {
         @include flex;
         @include justify-center;
         padding: 10px;
-
+ 
         .thumb{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+
             img{
                 width: 100%;
+                display: block;
+                transform: scale(1);
+                transition: all 1s linear;
+
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
         }
     }

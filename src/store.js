@@ -55,16 +55,19 @@ export const store = reactive({
     cardName: [
         {
             description: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown plants are noticed by when I hear the buzz of the little .',
+            image: '../../public/img/oliver-ragfelt-488196-2.jpg',
             name: 'Vera Duncan',
             agency: 'Amazon Inc.',
         },
         {
             description: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown plants are noticed by when I hear the buzz of the little .',
+            image: '../../public/img/12679.jpg',
             name: 'Vera Duncan',
             agency: 'Amazon Inc.',
         },
         {
             description: 'When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown plants are noticed by when I hear the buzz of the little .',
+            image: '../../public/img/oliver-ragfelt-488196-unsplash.jpg',
             name: 'Vera Duncan',
             agency: 'Amazon Inc.',
         },

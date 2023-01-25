@@ -3,11 +3,16 @@ export default {
     props:{
         name: Object
     },
+    data() {
+        return {
+            visibility: true
+        }
+    },
 }
 </script>
 
 <template>
-    <div class="cardName">
+    <div class="cardName" >
         <div class="info">
             <p>{{ name.description }}</p>
             <h4>{{ name.name }}</h4>
@@ -24,7 +29,6 @@ export default {
         width: calc(100% / 3);
         @include flex;
         @include justify-center;
-       
         background-color: white;
 
         .info{
@@ -40,6 +44,18 @@ export default {
             h4{
                 margin-bottom: 20px;
             }
+
+            h6{
+                color: $lightgray;
+            }
+
+            &:hover{
+                background-image: url('../../public/img/oliver-ragfelt-488196-2.jpg');
+                background-size: cover;
+            }
+        }
+        .info:hover h4{
+            color: white;
         }
     }
 </style>

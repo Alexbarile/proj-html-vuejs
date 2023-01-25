@@ -518,10 +518,11 @@ export default {
                                 color: #333333;
                                 transition: 1s;
 
-                                &:hover{
-                                    color: white;
-                                }
                             }
+                        }
+
+                        &:hover a{
+                            color: white;
                         }
                     }
                 }
@@ -578,11 +579,11 @@ export default {
                         text-decoration: none;
                         color: white;
                         transition: 1s;
-
-                        &:hover{
-                            color: black;
-                        }
                     }
+                }
+
+                &:hover a{
+                    color: black;
                 }
             }
         }

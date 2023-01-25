@@ -120,7 +120,7 @@ export default {
                 cursor: pointer
             }
         }
-
+        
         .col{
             ul{
                 @include flex;
@@ -213,11 +213,11 @@ export default {
                             text-decoration: none;
                             color: #333333;
                             transition: 1s;
-
-                            &:hover{
-                                color: white;
-                            }
                         }
+                    }
+
+                    &:hover a{
+                        color: white;
                     }
 
                     i{

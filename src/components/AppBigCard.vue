@@ -33,9 +33,26 @@ export default {
         padding: 10px;
         position: relative;
 
+        &:hover .info{
+            background-color: $lightyellow;
+            bottom: -95px;
+        } 
+
         .big{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+
             img{
                 width: 100%;
+                display: block;
+                transform: scale(1);
+                transition: all 1s linear;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
         }
     }
@@ -46,6 +63,7 @@ export default {
         right: 10px;
         width: 75%;
         padding: 50px 175px 45px 65px;
+        transition: 1s;
 
         .date-name{
             @include flex;
