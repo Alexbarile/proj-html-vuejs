@@ -8,6 +8,11 @@ export default {
 
 <template>
     <div class="cardName">
+        <div class="info">
+            <p>{{ name.description }}</p>
+            <h4>{{ name.name }}</h4>
+            <h6>{{ name.agency }}</h6>
+        </div>
         
     </div>
 </template>
@@ -20,7 +25,25 @@ export default {
         width: calc(100% / 3);
         @include flex;
         @include justify-center;
-        padding: 40px;
+       
+        background-color: white;
+
+        .info{
+            padding: 60px;
+            width: 75%;
+
+            p{
+                font-size: 13px;
+                color: $lightgray;
+                margin-bottom: 40px;
+            }
+
+            h4{
+                margin-bottom: 20px;
+            }
+        }
+
+        
 
         
     }

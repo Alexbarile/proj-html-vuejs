@@ -104,16 +104,35 @@ export default {
                 </div>
             </div>
 
-
-
-
             <!-- QUARTA SEZIONE -->
 
+            <div class="container-100">
+                <div class="bg-blue">
+                    <div class="container-80-fourth">
+                        <div class="row">
+                            <div class="col">
+                                <div class="info">
+                                    <div class="first-line">
+                                        <h4>testimonial</h4>
+                                        <div class="hr"></div>
+                                    </div>
+                                    <div class="h1">
+                                        <h1>WHAT'S THE CUSTOMER SAY ABOUT OUR WORK</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-
-
+                        <div class="row">
+                            <AppName v-for="(item, index) in store.cardName" :key="index" :name="item"></AppName>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- QUINTA SEZIONE -->
+
+
 
 
 
@@ -315,7 +334,7 @@ export default {
             .container-80-third{
                 width: 80%;
                 margin: 0 auto;
-                padding: 180px 0 120px 0;
+                padding: 180px 0 100px 0;
                
                 .row{
                     padding: 25px 0 25px 0;
@@ -346,6 +365,7 @@ export default {
                                 font-size: 40px;
                                 line-height: 55px;
                                 width: 75%;
+                                padding-top: 20px;
                             }
                         }
 
@@ -369,17 +389,66 @@ export default {
         }
     }
 
-
-
-
-
     // QUARTA SEZIONE
 
+    .container-100{
+        .bg-blue{
+            
+            .container-80-fourth{
+                width: 80%;
+                margin: 0 auto;
+                padding-bottom: 180px;
 
+                .row{
+                    @include flex;
+                    @include align-center;
+                    justify-content: flex-end;
+                    padding-top: 40px;
 
+                    .col{
+                        .info{
+                            
+                            .first-line{
+                                @include flex;
+                                justify-content: flex-end;
 
+                                .hr{
+                                    border-bottom: 2px solid $lightyellow;
+                                    width: 40px;
+                                    margin-left: 30px;
+                                }
+
+                                h4{
+                                    @include upperCase;
+                                    color: rgb(254, 230, 230);
+                                    font-weight: 200;
+                                }
+                            }
+
+                            .h1{
+                                display: flex;
+                                justify-content: flex-end;
+
+                                h1{
+                                    color: white;
+                                    font-size: 40px;
+                                    line-height: 55px;
+                                    width: 75%;
+                                    padding-top: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     // QUINTA SEZIONE
+
+    
+
+
 
 
 
