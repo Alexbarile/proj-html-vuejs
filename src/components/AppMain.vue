@@ -154,7 +154,7 @@ export default {
                             </div>
                         </div>
 
-                        <div class="row">
+                        <div class="row-bottom">
                             <AppBigCard v-for="(item, index) in store.cardBigCard" :key="index" :bigcard="item"></AppBigCard>
                         </div>
                     </div>
@@ -324,7 +324,6 @@ export default {
                 position: absolute;
                 bottom: 0;
                 right: 0;
-                border: none;
                 padding: 15px 40px 15px 40px;
                 background-color: $lightred;
                 @include upperCase;
@@ -504,7 +503,6 @@ export default {
                             }
                         }
                         button{
-                            border: none;
                             padding: 15px 40px 15px 40px;
                             background-color: $lightyellow;
                             @include upperCase;
@@ -526,6 +524,13 @@ export default {
                             }
                         }
                     }
+                }
+
+                .row-bottom{
+                    padding-bottom: 200px;
+                    @include flex;
+                    @include align-center;
+                    @include justify-between;
                 }
             }
         }
@@ -559,7 +564,6 @@ export default {
                 }
 
                 button{
-                    border: none;
                     padding: 15px 40px 15px 40px;
                     background-color: $darkblue;
                     @include upperCase;

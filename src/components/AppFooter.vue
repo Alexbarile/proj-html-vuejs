@@ -1,6 +1,10 @@
 <script>
+import AppSocial from './AppSocial.vue';
 
 export default {
+    components: {
+        AppSocial,
+    },
     data() {
         return {
             activeItem: 0,
@@ -36,6 +40,20 @@ export default {
                     active: false,
                 },
             ],
+            social:[
+                {
+                    icon: 'fa-brands fa-instagram',
+                },
+                {
+                    icon: 'fa-brands fa-linkedin-in',
+                },
+                {
+                    icon: 'fa-brands fa-facebook-f',
+                },
+                {
+                    icon: 'fa-brands fa-twitter',
+                },
+            ]
         }
     },
 }
@@ -67,10 +85,13 @@ export default {
                     </div>
                     <div class="col">
                         <div class="social">
-                            <a href="#null"><i class="fa-brands fa-instagram"></i></a>
+
+                            <AppSocial v-for="(item, index) in social" :key="index" :social="item"></AppSocial>
+
+                            <!-- <a href="#null"><i class="fa-brands fa-instagram"></i></a>
                             <a href="#null"><i class="fa-brands fa-linkedin-in"></i></a>
                             <a href="#null"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#null"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#null"><i class="fa-brands fa-twitter"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -131,9 +152,10 @@ export default {
                             a{
                                 text-decoration: none;
                                 color: $darkgray;
+                                transition: 0.5s;
 
                                 &:hover{
-                                    color: white;
+                                    color: $lightred;
                                 }
                             }
                         }
@@ -141,12 +163,7 @@ export default {
                 }
                 .col{
                     .social{
-                        display: flex;
-
-                        a{
-                            color: white;
-                            padding: 10px;
-                        }
+                        @include flex;
                     }
                 }
             }

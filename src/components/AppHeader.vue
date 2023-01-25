@@ -198,7 +198,6 @@ export default {
                     @include align-center;
 
                     button{
-                        border: none;
                         padding: 15px 40px 15px 40px;
                         background-color: $lightyellow;
                         @include upperCase;
