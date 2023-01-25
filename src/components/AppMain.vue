@@ -3,12 +3,14 @@ import {store} from '../store';
 import AppInfo from './AppInfo.vue';
 import AppImg from './AppImg.vue';
 import AppName from './AppName.vue';
+import AppBigCard from './AppBigCard.vue';
 
 export default {
     components:{
         AppInfo,
         AppImg,
         AppName,
+        AppBigCard,
     },
     data() {
         return {
@@ -132,11 +134,32 @@ export default {
 
             <!-- QUINTA SEZIONE -->
 
+            <div class="container-100">
+                <div class="bg-blue">
+                    <div class="container-80">
+                        <div class="row">
+                            <div class="col">
+                                <div class="info">
+                                    <div class="first-line">
+                                        <div class="hr"></div>
+                                        <h4>blog</h4>
+                                    </div>
+                                    <h1>THE RECENT NEWS YOU MUST READ IT</h1>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button class="button">
+                                    <a href="#null">view all</a>
+                                </button>
+                            </div>
+                        </div>
 
-
-
-
-
+                        <div class="row">
+                            <AppBigCard v-for="(item, index) in store.cardBigCard" :key="index" :bigcard="item"></AppBigCard>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- SESTA SEZIONE -->
 
@@ -446,12 +469,67 @@ export default {
 
     // QUINTA SEZIONE
 
-    
+    .container-100{
+        .bg-blue{
+            .container-80{
+                .row{
+                    padding: 25px 0 25px 0;
+                    @include flex;
+                    @include align-center;
+                    @include justify-between;
 
+                    .col{
+                        .info{
+                            .first-line{
+                                @include flex;
 
+                                .hr{
+                                    border-bottom: 2px solid $lightyellow;
+                                    width: 40px;
+                                    margin-right: 30px; 
+                                }
 
+                                h4{
+                                    @include upperCase;
+                                    color: rgb(254, 230, 230);
+                                    font-weight: 200;
+                                }
+                            }
 
+                            h1{
+                                color: white;
+                                font-size: 40px;
+                                line-height: 55px;
+                                padding-top: 20px;
+                            }
+                        }
+                        button{
+                            border: none;
+                            padding: 15px 40px 15px 40px;
+                            background-color: $lightyellow;
+                            @include upperCase;
+                            font-weight: 100;
+                            transition: 1s;
 
+                            &:hover{
+                                background-color: $lightred;
+                            }
+
+                            a{
+                                text-decoration: none;
+                                color: #333333;
+                                transition: 1s;
+
+                                &:hover{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     // SESTA SEZIONE
 
