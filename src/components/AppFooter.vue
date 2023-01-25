@@ -85,13 +85,7 @@ export default {
                     </div>
                     <div class="col">
                         <div class="social">
-
                             <AppSocial v-for="(item, index) in social" :key="index" :social="item"></AppSocial>
-
-                            <!-- <a href="#null"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#null"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#null"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#null"><i class="fa-brands fa-twitter"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -116,7 +110,6 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/mixins' as *;
 @use '../styles/partials/variables' as *;
-
 
     .bg-darkblue{
         width: 100%;

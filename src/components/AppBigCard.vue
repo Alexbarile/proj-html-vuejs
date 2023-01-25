@@ -31,9 +31,7 @@ export default {
         @include flex;
         @include justify-center;
         padding: 10px;
-        
         position: relative;
-        
 
         .big{
             img{

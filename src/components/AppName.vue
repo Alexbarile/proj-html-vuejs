@@ -13,7 +13,6 @@ export default {
             <h4>{{ name.name }}</h4>
             <h6>{{ name.agency }}</h6>
         </div>
-        
     </div>
 </template>
 
@@ -42,9 +41,5 @@ export default {
                 margin-bottom: 20px;
             }
         }
-
-        
-
-        
     }
 </style>

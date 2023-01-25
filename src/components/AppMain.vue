@@ -18,7 +18,6 @@ export default {
         }
     },
 }
-
 </script>
 
 <template>
@@ -39,6 +38,7 @@ export default {
                     </div>
                 </div>
             </div>
+
             <div class="container-80-first">
                 <div class="row">
                     <AppInfo v-for="(item, index) in store.cardInfo" :key="index" :info="item"></AppInfo>
@@ -559,7 +559,7 @@ export default {
                 }
 
                 p{
-                    color: $darkgray;
+                    color: rgba(255, 255, 255, 0.7);
                     margin-bottom: 20px;
                 }
 
@@ -586,13 +586,5 @@ export default {
                 }
             }
         }
-    }
-
-
-
-    
-    
-
-
-    
+    } 
 </style>
