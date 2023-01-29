@@ -68,11 +68,11 @@ export default {
 
                 <div class="row">
                     <div class="col">
-                        <div class="logo">
+                        <div class="logo animate__animated animate__fadeInRight">
                             <img src="../../public/img/logotype-2-300x50.png" alt="logo-type">
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col animate__animated animate__fadeInRight">
                         <nav>
                             <ul>
                                 <li v-for="(item, index) in navbar" :key="index" >

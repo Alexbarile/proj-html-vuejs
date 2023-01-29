@@ -28,7 +28,7 @@ export default {
 
             <div class="container-100-end">
                 <div class="container-85-end">
-                    <div class="row">
+                    <div class="row animate__animated animate__fadeInRight">
                         <div class="col">
                             <h4>Our consultants can help you</h4>
                         </div>
@@ -55,7 +55,7 @@ export default {
                         </div>
                     </div>
                     <div class="col-40">
-                        <div class="info">
+                        <div class="info animate__animated animate__fadeInRight">
                             <div class="first-line">
                                 <div class="hr"></div>
                                 <h4>about us</h4>
@@ -69,10 +69,10 @@ export default {
                 <div class="row">
                     <div class="col-85">
                         <div class="info">
-                            <h2>WE HELP TO DELIVER THE BUSINESS CASE</h2>
-                            <p>When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown</p>
+                            <h2 class="animate__animated animate__fadeInLeft">WE HELP TO DELIVER THE BUSINESS CASE</h2>
+                            <p class="animate__animated animate__fadeInRight">When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown</p>
                         </div>
-                        <button><a href="#null">get started</a></button>
+                        <button class="animate__animated animate__fadeInLeft"><a href="#null">get started</a></button>
                     </div>
                     <div class="col-15"></div>
                 </div>
@@ -85,7 +85,7 @@ export default {
                     <div class="container-80-third">
                         <div class="row">
                             <div class="col">
-                                <div class="info">
+                                <div class="info animate__animated animate__fadeInRight">
                                     <div class="first-line">
                                         <div class="hr"></div>
                                         <h4>project</h4>
@@ -113,7 +113,7 @@ export default {
                     <div class="container-80-fourth">
                         <div class="row">
                             <div class="col">
-                                <div class="info">
+                                <div class="info animate__animated animate__fadeInLeft">
                                     <div class="first-line">
                                         <h4>testimonial</h4>
                                         <div class="hr"></div>
@@ -139,7 +139,7 @@ export default {
                     <div class="container-80">
                         <div class="row">
                             <div class="col">
-                                <div class="info">
+                                <div class="info animate__animated animate__fadeInRight">
                                     <div class="first-line">
                                         <div class="hr"></div>
                                         <h4>blog</h4>
@@ -148,7 +148,7 @@ export default {
                                 </div>
                             </div>
                             <div class="col">
-                                <button class="button">
+                                <button class="button animate__animated animate__fadeInLeft">
                                     <a href="#null">view all</a>
                                 </button>
                             </div>
@@ -164,12 +164,14 @@ export default {
             <!-- SESTA SEZIONE -->
 
             <div class="container-100">
-                <div class="bg">
+                <div class="bg animate__animated animate__zoomIn">
                     <div class="row">
-                        <div class="col">
+                        <div class="col animate__animated animate__slideInUp">
                             <h1>LET'S TALK ABOUT WORK</h1>
                             <p>A wonderful serenity has taken possession Far far <br> away, behind the word mountains.</p>
-                            <button><a href="#null">get started</a></button>
+                            <button>
+                                <a href="#null">get started</a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -519,11 +521,12 @@ export default {
                                 transition: 1s;
 
                             }
+                            
+                            &:hover a{
+                                color: white;
+                            }
                         }
 
-                        &:hover a{
-                            color: white;
-                        }
                     }
                 }
 
@@ -580,10 +583,10 @@ export default {
                         color: white;
                         transition: 1s;
                     }
-                }
 
-                &:hover a{
-                    color: black;
+                    &:hover a{
+                        color: black;
+                    }
                 }
             }
         }

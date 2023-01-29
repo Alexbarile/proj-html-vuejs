@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div class="cardBigCard">
+    <div class="cardBigCard animate__animated animate__zoomIn">
         <div class="big">
             <img :src="bigcard.img" alt="">
         </div>

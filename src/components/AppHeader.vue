@@ -43,14 +43,14 @@ export default {
 
 <template>
     <header>
-        <div class="container-100">
+        <div class="container-100 animate__animated animate__fadeInDown">
 
             <!-- logo e navbar -->
 
             <div class="container-80">
                 <div class="row-header">
                     <div class="col">
-                        <div class="logo">
+                        <div class="logo animate__animated animate__fadeInLeft">
                             <img src="../../public/img/logotype.png" alt="logo-type-red">
                         </div>
                     </div>
@@ -73,12 +73,12 @@ export default {
             <div class="row">
                 <div class="col-30">
                     <div class="info">
-                        <div class="first-line">
+                        <div class="first-line animate__animated animate__slideInUp">
                             <div class="hr"></div>
                             <h4>always the best way you need it</h4>
                         </div>
-                        <h1>THE BEST BUSINESS CONSULTING</h1>
-                        <div class="third-line">
+                        <h1 class="animate__animated animate__slideInUp">THE BEST BUSINESS CONSULTING</h1>
+                        <div class="third-line animate__animated animate__fadeInRight">
                             <button class="button">
                                 <a href="#null">read more</a>
                             </button>
@@ -214,11 +214,12 @@ export default {
                             color: #333333;
                             transition: 1s;
                         }
+                        
+                        &:hover a{
+                            color: white;
+                        }
                     }
 
-                    &:hover a{
-                        color: white;
-                    }
 
                     i{
                         color: $lightyellow;

@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div class="cardInfo">
+    <div class="cardInfo animate__animated animate__slideInUp">
         <div class="miniature">
             <i :class="info.icon"></i>
         </div>

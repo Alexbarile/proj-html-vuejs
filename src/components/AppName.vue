@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <div class="cardName" >
+    <div class="cardName animate__animated animate__zoomIn" >
         <div class="info">
             <p>{{ name.description }}</p>
             <h4>{{ name.name }}</h4>

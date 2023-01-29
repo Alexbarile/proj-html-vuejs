@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div class="social">
+    <div class="social animate__animated animate__fadeInRight">
         <a href="#null"><i :class="social.icon"></i></a>
     </div>
 </template>

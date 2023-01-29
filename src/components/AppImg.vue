@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div class="cardImg">
+    <div class="cardImg animate__animated animate__fadeIn">
         <div class="thumb">
             <img :src="img.img" alt="">
         </div>
